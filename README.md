@@ -20,3 +20,8 @@ Add `github "matsuda/DrawerTransition"` to your Cartfile
 ~~~
 $ carthage update --platform iOS
 ~~~
+
+
+## TODO
+
+- [ ] from left direction
