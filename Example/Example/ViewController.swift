@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         let navi = storyboard?.instantiateViewController(withIdentifier: "MenuNavigation") as! UINavigationController
         navi.modalPresentationStyle = .custom
         navi.transitioningDelegate = transition
+        let vc = navi.viewControllers.first as! MenuController
+        (transition as! DrawerTransition).delegate = vc
         present(navi, animated: true, completion: nil)
     }
 }

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import DrawerTransition
 
-class MenuController: UIViewController {
+final class MenuController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,17 @@ class MenuController: UIViewController {
     }
 
     func tapDone(sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension MenuController: DrawerTransitionDelegate {
+    func shouldAutomaticallyDismissPresentatedViewController() -> Bool {
+        return false
+    }
+
+    func drawerTransitionDidTapDimmingView() {
+        print(#function)
         dismiss(animated: true, completion: nil)
     }
 }

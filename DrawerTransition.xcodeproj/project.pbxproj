@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E50AF5A1E10F35800F4EC68 /* DrawerTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50AF591E10F35800F4EC68 /* DrawerTransitionDelegate.swift */; };
 		0ED05D281DDD6C8E0003B3A7 /* DrawerTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED05D1E1DDD6C8E0003B3A7 /* DrawerTransition.framework */; };
 		0ED05D2D1DDD6C8E0003B3A7 /* DrawerTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED05D2C1DDD6C8E0003B3A7 /* DrawerTransitionTests.swift */; };
 		0ED05D5C1DDD70F10003B3A7 /* DrawerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED05D571DDD70F10003B3A7 /* DrawerAnimatedTransitioning.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E50AF591E10F35800F4EC68 /* DrawerTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTransitionDelegate.swift; sourceTree = "<group>"; };
 		0ED05D1E1DDD6C8E0003B3A7 /* DrawerTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DrawerTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED05D271DDD6C8E0003B3A7 /* DrawerTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawerTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED05D2C1DDD6C8E0003B3A7 /* DrawerTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerTransitionTests.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				0ED05D5A1DDD70F10003B3A7 /* DrawerTransition.swift */,
 				0ED05D581DDD70F10003B3A7 /* DrawerPresentationController.swift */,
 				0ED05D571DDD70F10003B3A7 /* DrawerAnimatedTransitioning.swift */,
+				0E50AF591E10F35800F4EC68 /* DrawerTransitionDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED05D5D1DDD70F10003B3A7 /* DrawerPresentationController.swift in Sources */,
+				0E50AF5A1E10F35800F4EC68 /* DrawerTransitionDelegate.swift in Sources */,
 				0ED05D5F1DDD70F10003B3A7 /* DrawerTransition.swift in Sources */,
 				0ED05D5C1DDD70F10003B3A7 /* DrawerAnimatedTransitioning.swift in Sources */,
 			);

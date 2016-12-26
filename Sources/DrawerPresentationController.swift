@@ -9,6 +9,8 @@
 import UIKit
 
 class DrawerPresentationController: UIPresentationController {
+    weak var transitionDelegate: DrawerTransitionDelegate?
+
     var scale: Double = 0.8
 
     fileprivate let dimmingView = UIView()
@@ -64,7 +66,7 @@ class DrawerPresentationController: UIPresentationController {
         return size
     }
 
-    fileprivate func prepareOverlay() {
+    private func prepareOverlay() {
         dimmingView.backgroundColor = UIColor.black
         dimmingView.alpha = 0
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapOverlay(gesture:)))
@@ -72,6 +74,13 @@ class DrawerPresentationController: UIPresentationController {
     }
 
     func didTapOverlay(gesture: UIGestureRecognizer) {
-        presentedViewController.dismiss(animated: true, completion: nil)
+        var dismiss: Bool = true
+        if let delegate = transitionDelegate {
+            delegate.drawerTransitionDidTapDimmingView()
+            dismiss = delegate.shouldAutomaticallyDismissPresentatedViewController()
+        }
+        if dismiss {
+            presentedViewController.dismiss(animated: true, completion: nil)
+        }
     }
 }
