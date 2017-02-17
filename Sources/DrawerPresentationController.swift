@@ -3,7 +3,7 @@
 //  DrawerTransition
 //
 //  Created by Kosuke Matsuda on 2016/11/17.
-//  Copyright © 2016年 Appirits. All rights reserved.
+//  Copyright © 2016年 matsuda. All rights reserved.
 //
 
 import UIKit
