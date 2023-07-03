@@ -73,7 +73,7 @@ class DrawerPresentationController: UIPresentationController {
         dimmingView.addGestureRecognizer(gesture)
     }
 
-    func didTapOverlay(gesture: UIGestureRecognizer) {
+    @objc func didTapOverlay(gesture: UIGestureRecognizer) {
         var dismiss: Bool = true
         if let delegate = transitionDelegate {
             delegate.drawerTransitionDidTapDimmingView()
